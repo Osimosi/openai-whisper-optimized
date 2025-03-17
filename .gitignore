@@ -1,0 +1,35 @@
+# Dataset directories
+processed_urdu_dataset/
+processed_urdu_dataset_old/
+cached_dataset/
+dataset tsv's/
+**/clips/
+
+# Dataset files
+*.tsv
+*.arrow
+*.json
+!package.json
+
+# Cache files
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Model checkpoints and logs
+runs/
+checkpoints/
+wandb/
+*.pt
+*.bin
+*.pth
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# System files
+.DS_Store
+Thumbs.db
