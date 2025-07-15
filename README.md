@@ -18,8 +18,9 @@
 | Training Visualization                                                              | Comparison Metrics                                             |
 | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | ![Training Progress](visualizations/Successful%20Training%20complete.png)           | ![WER Reduction](visualizations/improvement_visualization.png) |
-| ![Training halt](visualizations/model%training.png)                                 | ![Bar Plot Comparison](visualizations/bar_plot_comparison.png) |
-                                                                                      | ![Original WER](visualizations/Original%20Word%20Error%20Rate%20Whisper%20Tiny.png) |
+| ![Training Halt](visualizations/model%20training.png)                               | ![Bar Plot Comparison](visualizations/bar_plot_comparison.png) |
+| ![Original WER](visualizations/Original%20Word%20Error%20Rate%20Whisper%20Tiny.png) |                                                                |
+
 ---
 
 ## Model Performance
