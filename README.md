@@ -1,18 +1,30 @@
 # WhisperMini: Fine-Tuning Whisper for Urdu ASR
 
-**WhisperMini** is a fine-tuned and optimized version of OpenAI’s Whisper ASR model, built to improve Urdu speech transcription in resource-constrained environments like call centers and edge devices.
+**WhisperMini** is a fine-tuned and optimized version of OpenAI’s Whisper ASR model, developed to improve Urdu speech transcription in low-resource environments such as call centers and mobile devices.
 
 ## Project Highlights
 
-* Fine-tuned the Whisper-Tiny model on Urdu data (Mozilla Common Voice)
-* Word Error Rate (WER) reduced from 125.0% to 51.2%
-* Outperformed the original Whisper-Base model (WER 81.0%)
-* Applied dynamic quantization using HuggingFace Optimum
-* Memory usage reduced by 64%, inference time improved by 30%
+* Fine-tuned `whisper-tiny` on Urdu (Mozilla Common Voice)
+* Reduced Word Error Rate (WER) from 125.0% to 51.2%
+* Outperformed the original `whisper-base` (WER 81.0%)
+* Applied dynamic quantization for reduced memory usage and faster inference
+* Model hosted on Hugging Face:
+  👉 [osman31/whisper-tiny-urdu-v1](https://huggingface.co/osman31/whisper-tiny-urdu-v1)
 
-## Fine-Tuning Details
+---
 
-We fine-tuned the Whisper-Tiny model to address its poor zero-shot performance on Urdu, a low-resource language. After training:
+## Visual Results
+
+| Training Visualization                                                              | Comparison Metrics                                             |
+| ----------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| ![Training Progress](visualizations/Successful%20Training%20complete.png)           | ![WER Reduction](visualizations/improvement_visualization.png) |
+| ![Original WER](visualizations/Original%20Word%20Error%20Rate%20Whisper%20Tiny.png) | ![Bar Plot Comparison](visualizations/bar_plot_comparison.png) |
+| ![Terminal Error Graph](visualizations/Terminal%20Error%20Rates.png)                | ![Lollipop WER](visualizations/lollipop_comparison.png)        |
+| ![Horizontal Bar](visualizations/horizontal_bar_comparison.png)                     |                                                                |
+
+---
+
+## Model Performance
 
 | Model          | Original WER | Fine-Tuned WER |
 | -------------- | ------------ | -------------- |
@@ -20,28 +32,46 @@ We fine-tuned the Whisper-Tiny model to address its poor zero-shot performance o
 | Whisper-Base   | 81.0%        | —              |
 | Whisper-Medium | 39.0%        | —              |
 
-The fine-tuned Tiny model provides a practical balance between accuracy and efficiency, making it ideal for real-world Urdu ASR applications.
+* Quantization led to 64% memory reduction and 30% faster inference
+* Exported to ONNX for compatibility and deployment
 
-## Optimization
+---
 
-* Applied dynamic quantization and exported the model to ONNX
-* Reduced inference time from 15 seconds to 6.7 seconds (sample audio)
-* Model is ready for deployment in environments with limited resources
+## Live Frontend Demo
 
-## Model Access
+A Gradio-based app is included in the repo to compare transcriptions between:
 
-The fine-tuned model is available on Hugging Face:
-**[osman31/whisper-tiny-urdu-v1](https://huggingface.co/osman31/whisper-tiny-urdu-v1)**
+* Fine-tuned Whisper-Tiny (Urdu-optimized)
+* Original Whisper-Tiny (zero-shot)
 
-## Usage
-Just run the frontend.py file. It's a Gradio based web interface for uploading and transcribing Urdu audio from the Hugging Face model I trained.
+**Run:**
 
+```bash
+python frontend.py
+```
+
+**Features:**
+
+* Accepts microphone input
+* Displays side-by-side Urdu transcription results
+* Auto-detects GPU for accelerated inference
+
+---
+
+## Folder Structure
+
+* `frontend.py` – Gradio comparison UI
+* `visualizations/` – Training and evaluation charts
+
+---
 
 ## Future Work
 
-* Extend to regional Urdu dialects and code-switched speech
-* Explore structured pruning for further speed-up
-* Pilot deployment in call center environments
+* Support for Urdu-English code-switching and regional dialects
+* Further compression via pruning
+* Deployment on edge hardware (Jetson, Android)
+
+---
 
 ## Authors
 
