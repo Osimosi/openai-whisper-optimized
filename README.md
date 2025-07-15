@@ -1,7 +1,3 @@
-Here’s a concise, GitHub-friendly `README.md` for your Whisper fine-tuning project, focusing primarily on the fine-tuning work while still mentioning quantization and the optimization goals:
-
----
-
 # WhisperMini: Fine-Tuning Whisper for Urdu ASR
 
 **WhisperMini** is a fine-tuned and optimized version of OpenAI’s Whisper ASR model, designed to improve Urdu speech transcription, especially in resource-constrained environments like call centers and mobile devices.
@@ -32,7 +28,7 @@ The fine-tuned tiny model became significantly more usable and even outperformed
 * Optimized models are **platform-independent** and suitable for edge deployment.
 * Inference time reduced from 15s ➝ 6.7s for sample audio.
 
-## 🚀 Usage
+## Usage
 
 Gradio based web interface for uploading and transcribing Urdu audio.
 
@@ -47,7 +43,3 @@ Gradio based web interface for uploading and transcribing Urdu audio.
 * Mohammad Osman
 * Nayyera Wasim
 * Fatima Ghafoor
-
----
-
-Let me know if you'd like a version with setup instructions or notebook links.
