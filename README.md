@@ -23,8 +23,8 @@
 
 ### Comparison Metrics
 
-![WER Reduction](visualizations/improvement_visualization.png)
-![Bar Plot Comparison](visualizations/bar_plot_comparison.png)
+![WER Reduction](visualizations/canva/1.png)
+![Bar Plot Comparison](visualizations/canva/2.png)
 
 ---
 
