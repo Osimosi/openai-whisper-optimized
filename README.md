@@ -19,8 +19,7 @@
 | ----------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | ![Training Progress](visualizations/Successful%20Training%20complete.png)           | ![WER Reduction](visualizations/improvement_visualization.png) |
 | ![Original WER](visualizations/Original%20Word%20Error%20Rate%20Whisper%20Tiny.png) | ![Bar Plot Comparison](visualizations/bar_plot_comparison.png) |
-| ![Terminal Error Graph](visualizations/Terminal%20Error%20Rates.png)                | ![Lollipop WER](visualizations/lollipop_comparison.png)        |
-| ![Horizontal Bar](visualizations/horizontal_bar_comparison.png)                     |                                                                |
+| ![Horizontal Bar](visualizations/horizontal_bar_comparison.png)                     | ![Lollipop WER](visualizations/lollipop_comparison.png)        |
 
 ---
 
