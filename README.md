@@ -14,18 +14,16 @@
 ---
 
 ## Visual Results
+### Comparison Metrics
+
+![WER Reduction](visualizations/canva/1.png)
+![Bar Plot Comparison](visualizations/canva/2.png)
 
 ### Training Visualizations
 
 ![Training Progress](visualizations/Successful%20Training%20complete.png)
 ![Training Halt](visualizations/model%20training.png)
 ![Original WER](visualizations/Original%20Word%20Error%20Rate%20Whisper%20Tiny.png)
-
-### Comparison Metrics
-
-![WER Reduction](visualizations/canva/1.png)
-![Bar Plot Comparison](visualizations/canva/2.png)
-
 ---
 
 ## Model Performance
